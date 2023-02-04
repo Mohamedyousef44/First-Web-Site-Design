@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Flower Flog</title>
+    <style>
+        #mainNav , #fooTer{
+            width: 80% !important; 
+            justify-content: space-evenly !important;
+        }
+        #mainNav a{
+            color:#B2B2B2 ;
+        }
+        #mainNav a:hover{
+            color: white !important;
+        }
+
+        #mainContent{
+            width: 70%;
+        }
+        #asideBar a:hover{
+            text-decoration: underline !important ;
+        }
+        .grad{
+            background-image: linear-gradient(#b8b8b8,#c2c0c0,#d1d1d1) !important;
+        }
+        #fooTer a:hover{
+            text-decoration: none;
+            color: white !important;
+        }
+
+    </style>
+</head>
+<body class="bg-light">
+    <!-- for header and nav bar -->
+    <div class="container-fluid">
+
+        <!--  header  -->
+
+        <div class="row text-bg-light p-3 " id="HeaderOfpage">
+            <div class="col-10 offset-2">
+                <h1 class="h3 pt-4"><strong>The Flower Blog</strong></h1>
+            </div>
+        </div>
+
+        <!-- nav bar -->
+        <div class="row" id="navBar">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark">
+                <div class="container-fluid">
+                  <button class="navbar-toggler bg-light"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                    <div class="navbar-nav" id="mainNav">
+                      <a class="nav-link active" aria-current="page" href="#aboutDiv">Blog</a>
+                      <a class="nav-link" href="#aboutDiv">About</a>
+                      <a class="nav-link" href="#Archieves">Archieves</a>
+                      <a class="nav-link" href="#">Contacts</a>
+                      <div class="d-flex align-items-center">
+                        <img src="./src/assests/rss.png">
+                        <a class="nav-link" href="#">Subscribe via. RSS</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+        </div>
+    </div>
+
+
+    <!-- for main content -->
+
+
+    <div class="container py-3" id="mainContent">
+
+        <!-- for row of image -->
+
+        <div class="row rounded-3 text-white d-none d-md-flex" style="background-color: #a3ce10;">
+            <div class="col-4 d-m-none pt-3 ps-5 text-break z-3">
+                <h3>Do you love flowers as</h3>
+                <h4>much as we do?</h4>
+                <p style="font-size: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quibusdam doloribus eveniet dolorum perspiciatis, aliquid quisquam odit repellendus mollitia perferendis quae. Distinctio sit praesentium excepturi. Cupiditate aspernatur tempore repellendus a.</p>
+            </div>
+            <div class="col-8 d-m-none">
+                <img src="./src/assests/intro_flower.png" class="rounded-3 z-n1" width="100%" height="100%" alt="flower image">
+            </div>
+        </div>
+
+        <!-- for row of two columns -->
+
+        <div class="row">
+
+            <!-- for main contetnt column -->
+            <div class="col-md-8 col-12 d-flex flex-column justify-content-between">
+
+            <!-- for first div -->
+                <div class="py-4 border-bottom">
+                    <figure>
+                        <blockquote class="blockquote">
+                          <h3 class="pb-4">This is the title of a blog post</h3>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                            Posted on June 29th 2009 by  <cite title="Source Title"><a href="" class="text-black-50">Mads Kjaer - 3 comments</a></cite>
+                        </figcaption>
+                      </figure>
+                      <p style="font-size: 14px;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod tellus eu orci imperdiet nec rutrum lacus blandit. Cras enim nibh, sodales ultricies elementum vel, fermentum id tellus. Proin metus odio, ultricies eu pharetra dictum, laoreet id odio. Curabitur in odio augue. Morbi congue auctor interdum. Phasellus sit amet metus justo. Phasellus vitae tellus orci, at elementum ipsum. In in quam eget diam adipiscing condimentum. Maecenas gravida diam vitae nisi convallis vulputate quis sit amet nibh. Nullam ut velit tortor. Curabitur ut elit id nisl volutpat consectetur ac ac lorem. Quisque non elit et elit lacinia lobortis nec a velit. Sed ac nisl sed enim consequat porttitor.
+                      </p>
+                      <figure class="figure pt-4">
+                        <img src="./src/assests/flower.png" class="figure-img img-fluid rounded" alt="...">
+                        <figcaption class="figure-caption">This is a beautiful flower</figcaption>
+                      </figure>
+                      <p style="font-size: 14px;">Pellentesque ut sapien arcu, egestas mollis massa. Fusce lectus leo, fringilla at aliquet sit amet, volutpat non erat. Aenean molestie nibh vitae turpis venenatis vel accumsan nunc tincidunt. Suspendisse id purus vel felis auctor mattis non ac erat. Pellentesque sodales venenatis condimentum. Aliquam sit amet nibh nisi, ut pulvinar est. Sed ullamcorper nisi vel tortor volutpat eleifend. Vestibulum iaculis ullamcorper diam consectetur sagittis. Quisque vitae mauris ut elit semper condimentum varius nec nisl. Nulla tempus porttitor dolor ac eleifend. Proin vitae purus lectus, a hendrerit ipsum. Aliquam mattis lacinia risus in blandit.</p>
+                      <p style="font-size: 14px;">Vivamus vitae nulla dolor. Suspendisse eu lacinia justo. Vestibulum a felis ante, non aliquam leo. Aliquam eleifend, est viverra semper luctus, metus purus commodo elit, a elementum nisi lectus vel magna. Praesent faucibus leo sit amet arcu vehicula sed facilisis eros aliquet. Etiam sodales, enim sit amet mollis vestibulum, ipsum sapien accumsan lectus, eget ultricies arcu velit ut diam. Aenean fermentum luctus nulla, eu malesuada urna consequat in. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque massa lacus, sodales id facilisis ac, lobortis sed arcu. Donec hendrerit fringilla ligula, ac rutrum nulla bibendum id. Cras sapien ligula, tincidunt eget euismod nec, ultricies eu augue. Nulla vitae velit sollicitudin magna mattis eleifend. Nam enim justo, vulputate vitae pretium ac, rutrum at turpis. Aenean id magna neque. Sed rhoncus aliquet viverra.</p>
+                </div>
+
+                <!-- for second div -->
+
+                <div class="border-bottom">
+                    <h5 class="py-4">Comments</h5>
+                    <div class="d-flex flex-column justify-content-evenly align-items-center px-2">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex flex-column justify-content-start align-items-start" >
+                                <a href="" class="text-black ">George Washington</a>
+                                <p class="col-5 text-nowrap" style="font-size: 12px;">on June 29th 2009 at 23:35</p>
+                            </div>
+                            <p class ="offset-1 col-6" style="font-size: 12px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column justify-content-evenly align-items-center bg-secondary rounded-2 px-2">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex flex-column justify-content-start align-items-start" >
+                                <a href="" class="text-black ">Benjamin Franklin</a>
+                                <p class="col-5 text-nowrap" style="font-size: 12px;">on June 29th 2009 at 23:40</p>
+                            </div>
+                            <p class ="offset-1 col-6" style="font-size: 12px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column justify-content-evenly align-items-center px-2">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex flex-column justify-content-start align-items-start" >
+                                <a href="" class="text-black ">Barack Obama</a>
+                                <p class="col-5 text-nowrap" style="font-size: 12px;">on June 29th 2009 at 23:59</p>
+                            </div>
+                            <p class ="offset-1 col-6" style="font-size: 12px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- for third div -->
+                <div class="py-4">
+                    <h5>Post comment</h5>
+                    <form class="ps-5 pt-3">
+                        <div class="row mb-3">
+                          <label for="inputEmail3" class="col-sm-2 col-form-label ">Name</label>
+                          <div class="col-sm-10">
+                            <input type="text" class="form-control" id="inputEmail3">
+                          </div>
+                        </div>
+                        <div class="row mb-3">
+                          <label for="inputEmail3" class="col-sm-2 col-form-label ">Email</label>
+                          <div class="col-sm-10">
+                            <input type="email" class="form-control" id="inputEmail3">
+                          </div>
+                        </div>
+                        <div class="row mb-3">
+                          <label for="inputEmail3" class="col-sm-2 col-form-label ">Website</label>
+                          <div class="col-sm-10">
+                            <input type="text" class="form-control" id="inputEmail3">
+                          </div>
+                        </div>
+                        <div class="input-group pb-4">
+                            <span class="input-group-text">comment</span>
+                            <textarea class="form-control" aria-label="With textarea"></textarea>
+                          </div>
+                        <button type="submit" class="btn btn-secondary ">Post a comment</button>
+                      </form>
+                </div>
+            </div>
+
+            
+            <!-- for side bar column -->
+
+            <div class=" col-md-4 col-12 border-start" style="background-color: #d1d1d1;" id="asideBar">
+                <div class="p-2 rounded-3 m-4 grad">
+                    <p>Categories</p>
+                    <ul style="list-style: none;">
+                        <li><a href=""  class="text-black text-decoration-none">Lorem ipsum dolor</a></li>
+                        <li><a href=""  class="text-black text-decoration-none">Sit amet consectetur</a></li>
+                        <li><a href=""  class="text-black text-decoration-none">Adipisicing elit sed</a></li>
+                        <li><a href=""  class="text-black text-decoration-none">Do eiusmod tempor</a></li>
+                        <li><a href=""  class="text-black text-decoration-none">Incididunt ut labore</a></li>
+                    </ul>
+                </div>
+                <div class="p-2 rounded-3 m-4 grad" id="Archieves">
+                    <p>Archieves</p>
+                    <ul style="list-style: none;">
+                        <li><a href=""  class="text-black text-decoration-none">Dec 2008</a></li>
+                        <li><a href=""  class="text-black text-decoration-none">Jan 2009</a></li>
+                        <li><a href=""  class="text-black text-decoration-none">Feb 2009</a></li>
+                        <li><a href=""  class="text-black text-decoration-none">Mar 2009</a></li>
+                        <li><a href=""  class="text-black text-decoration-none">Apr 2009</a></li>
+                        <li><a href=""  class="text-black text-decoration-none">May 2009</a></li>
+                        <li><a href=""  class="text-black text-decoration-none">Jun 2009</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+      </div>
+
+      <!-- for footer -->
+
+      <div class="container-fluid bg-black text-white">
+        <div class="container pt-5 px-1 d-flex justify-content-around align-items-start " id="fooTer">
+            <footer class="row">
+                <div id="aboutDiv" class="col-md-4 col-12">
+                    <p><strong>About</strong></p>
+                    <p class="fs-6 text-white-50 text-break">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="col-md-4 col-12">
+                    <p><strong>Blogroll</strong></p>
+                    <ul>
+                        <li><a class="text-white-50" href="">NETTUTS+</a></li>
+                        <li><a class="text-white-50" href="">FreelanceSwitch</a></li>
+                        <li><a class="text-white-50" href="">In The Woods</a></li>
+                        <li><a class="text-white-50" href="">Netsetter</a></li>
+                        <li><a class="text-white-50" href="">PSDTUTS+</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-12">
+                    <p><strong>Popular</strong></p>
+                    <ul>
+                        <li><a class="text-white-50 fs-6" href="">This is the title of a blog post</a></li>
+                        <li><a class="text-white-50 fs-6" href="">Lorem ipsum dolor sit amet</a></li>
+                        <li><a class="text-white-50 fs-6" href="">Consectetur adipisicing elit, sed do eiusmod</a></li>
+                        <li><a class="text-white-50 fs-6" href="">Duis aute irure dolor</a></li>
+                        <li><a class="text-white-50 fs-6" href="">Excepteur sint occaecat cupidatat</a></li>
+                        <li><a class="text-white-50 fs-6" href="">Reprehenderit in voluptate velit</a></li>
+                        <li><a class="text-white-50 fs-6" href="">Excepteur sint occaecat cupidatat</a></li>
+                        <li><a class="text-white-50 fs-6" href="">Officia deserunt mollit anim id est laborum</a></li>
+                        <li><a class="text-white-50 fs-6" href="">Lorem ipsum dolor sit amet</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="./src/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
